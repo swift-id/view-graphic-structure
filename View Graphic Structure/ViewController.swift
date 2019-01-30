@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let square: UIView = UIView()
         
         square.backgroundColor = UIColor.orange
-        square.frame = CGRect(x: 0.0, y: 120.0, width: 150.0, height: 150.0)
+        square.frame = CGRect(x: 0.0, y: 120.0, width: 150.0, height: 250.0)
         
         view.addSubview(square)
         
