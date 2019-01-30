@@ -12,9 +12,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // MARK: Square object
+        
+        let square: UIView = UIView()
+        
+        square.backgroundColor = UIColor.orange
+        square.frame = CGRect(x: 0.0, y: 120.0, width: 150.0, height: 150.0)
+        
+        view.addSubview(square)
+        
+        // MARK: Label object
+        
+        let name: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+        
+        name.text = "Kukuh"
+        name.textColor = UIColor.blue
+        name.backgroundColor = UIColor.green
+        
+        square.center = CGPoint(x: 200, y: 200)
+        square.addSubview(name)
     }
-
-
 }
 
